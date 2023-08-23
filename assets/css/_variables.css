@@ -1,0 +1,22 @@
+:root {
+  --brand-primary: rgb(238, 77, 45);
+  --white: #fff;
+  --black: #000;
+  --selected-border: #ccc;
+  --header-height: 106px;
+
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-48: 48px;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+
+  --icon-size-12: 12px;
+  --icon-size-18: 18px;
+  --icon-size-24: 24px;
+
+  --button-hover: #d9d9d959;
+}
