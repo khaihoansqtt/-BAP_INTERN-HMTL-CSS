@@ -74,11 +74,15 @@ li {
   margin-left: auto !important;
   margin-right: auto !important;
 }
-.hp_pr-100 {
+.hp_pX-100 {
   padding-right: 100px;
 }
 .hp_pl-100 {
   padding-left: 100px;
+}
+.hp_px-100 {
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 /* Layout */
