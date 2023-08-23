@@ -234,3 +234,10 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.bl_saleOff_BuyBtn {
+  position: absolute;
+  left: 50%;
+  bottom: -67px;
+  transform: translateX(-50%);
+}

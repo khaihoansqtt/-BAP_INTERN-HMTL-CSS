@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  font-family: "Inter", sans-serif;
+}
+
 @media (min-width: 1200px) {
   .container,
   .container-lg {
@@ -22,20 +26,27 @@
   margin: 0 auto;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-family: "Inter", sans-serif;
-}
-
 li {
   list-style-type: none;
 }
 
+/* Button */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 30px;
+  border-radius: 20px;
+  background: #fff;
+  border: none;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 /* Helper */
 .hp_db {
   display: block !important;
