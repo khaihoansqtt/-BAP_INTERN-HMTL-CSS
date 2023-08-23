@@ -24,6 +24,13 @@ html {
 
 .container {
   margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.container.wide {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 li {
@@ -69,12 +76,15 @@ li {
 .hp_bgcWhite {
   background-color: #fff !important;
 }
+.hp_bgcPrimary {
+  background: var(--primary, #f7f6f0);
+}
 .hp_centering {
   display: block !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
-.hp_pX-100 {
+.hp_pr-100 {
   padding-right: 100px;
 }
 .hp_pl-100 {

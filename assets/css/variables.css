@@ -1,5 +1,6 @@
 :root {
-  --brand-primary: rgb(238, 77, 45);
+  --primary: #f7f6f0;
+  --secondary: #fff;
   --white: #fff;
   --black: #000;
   --selected-border: #ccc;

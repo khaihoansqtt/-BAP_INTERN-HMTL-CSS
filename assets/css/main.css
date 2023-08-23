@@ -121,7 +121,7 @@
   position: relative;
 }
 
-.bl_brand_content {
+.bl_brand_cont {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -203,7 +203,7 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-.bl_saleOff_content {
+.bl_saleOff_cont {
   display: flex;
   width: 345px;
   height: 135px;
@@ -243,4 +243,163 @@
 .bl_saleOff_BuyBtn {
   margin: 19px auto 0 auto;
   display: flex;
+}
+
+/* Section Sign up */
+.bl_signUp_wrapper {
+  height: 797px;
+  padding-left: 128px;
+  padding-right: 128px;
+  display: flex;
+  position: relative;
+}
+
+.bl_signUp_wrapper::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 645.001px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.bl_signUp_benefit {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  color: var(--black);
+  padding-top: 162px;
+  padding-bottom: 162px;
+}
+
+.bl_signUp_benefit_ttl {
+  width: 547px;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.bl_signUp_benefit_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.bl_signUp_benefit_listItem {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+.bl_signUp_benefit_listItem svg {
+  margin-right: 6px;
+}
+
+.bl_signUp_cont {
+  padding-top: 158px;
+  padding-bottom: 158px;
+  flex: 1;
+  padding-left: 131px;
+  padding-right: 43px;
+}
+
+.bl_signUp_form {
+}
+
+.bl_signUp_form_main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.bl_signUp_form_main > input {
+  padding: 6px 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--secondary, #fff);
+  outline: none;
+  border: none;
+}
+
+.bl_signUp_form_agreePolicy {
+  display: flex;
+  align-items: center;
+}
+
+.bl_signUp_form_agreePolicy input {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  background: var(--secondary, #fff);
+  margin-right: 12px;
+  outline: none;
+  border: none;
+  appearance: none;
+}
+
+.bl_signUp_btn {
+  display: flex;
+  margin: 28px auto 0;
+}
+
+.bl_signUp_cont_seperate {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 23px;
+  position: relative;
+}
+
+.bl_signUp_cont_seperate span {
+  padding: 0 12px;
+  background-color: var(--primary, #f7f6f0);
+  position: relative;
+}
+
+.bl_signUp_cont_seperate::before {
+  display: block;
+  content: "";
+  height: 1px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.bl_signUp_withOther {
+}
+
+.bl_signUp_google {
+}
+
+.bl_signUp_facebook {
 }

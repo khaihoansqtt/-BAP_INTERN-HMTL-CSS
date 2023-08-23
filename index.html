@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BAP_INTERN-HTML,CSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,25 +18,27 @@
 <body>
 
     <header class="ly_header">
-        <div class="container ly_header_container hp_px-100">
-            <ul class="bl_header_menu">
-                <li class="bl_header_menu_item active">
-                    <!-- không có css có cần đặt class không?-->
-                    home
-                    <!-- đang dùng position absolute -->
-                    <div class="bl_header_menu_item_bot_border"></div>
-                    <!-- làm sao để border ở giữa theo chiều dọc, có phải là margin cho bl_header_menu -->
-                </li>
-                <li class="bl_header_menu_item">
-                    product
-                </li>
-                <li class="bl_header_menu_item">
-                    categories
-                </li>
-                <li class="bl_header_menu_item">
-                    sale
-                </li>
-            </ul>
+        <div class="container ly_header_container">
+            <nav>
+                <ul class="bl_header_menu">
+                    <li class="bl_header_menu_item active">
+                        <!-- không có css có cần đặt class không?-->
+                        home
+                        <!-- đang dùng position absolute -->
+                        <div class="bl_header_menu_item_bot_border"></div>
+                        <!-- làm sao để border ở giữa theo chiều dọc, có phải là margin cho bl_header_menu -->
+                    </li>
+                    <li class="bl_header_menu_item">
+                        product
+                    </li>
+                    <li class="bl_header_menu_item">
+                        categories
+                    </li>
+                    <li class="bl_header_menu_item">
+                        sale
+                    </li>
+                </ul>
+            </nav>
             <div class="bl_header_brand">
                 <div class="bl_header_brand_ttl">MEJIWOO</div>
                 <div class="bl_header_brand_txt">미지우</div>
@@ -85,9 +87,11 @@
         </div>
     </header>
     <main class="ly_cont">
-        <div class="container">
+
+        <!-- section brand background -->
+        <div class="container wide">
             <div class="bl_brand_img">
-                <div class="bl_brand_content">
+                <div class="bl_brand_cont">
 
                     <!-- chỗ này dùng flex box hệt vơi smẫu -->
                     <div class="bl_brand_ttl">
@@ -103,17 +107,25 @@
                         with MEJIWOO Korean Made</h3>
                 </div>
             </div>
+        </div>
+
+        <!-- section season collections -->
+        <div class="container">
             <div class="bl_section">
                 <h1 class="bl_section_header">
                     season collections
                 </h1>
                 <!-- Dùng theo kiểu col hay là như thiết kế là display flex -->
-                <div class="bl_section_content"></div>
+                <div class="bl_section_cont"></div>
             </div>
-            <!-- có cần dùng chung với brand background (bl_brand_img) không? -->
+        </div>
+
+        <!-- section Sale off -->
+        <!-- có cần dùng chung với brand background (bl_brand_img) không? -->
+        <div class="container wide">
             <div class="bl_saleOff_img">
                 <div class="bl_saleOff_wrapper">
-                    <div class="bl_saleOff_content">
+                    <div class="bl_saleOff_cont">
 
                         <h1 class="bl_saleOff_ttl">Get 50% Off</h1>
                         <!-- chữ này làm sao xuống dòng giống hệt thiết kế -->
@@ -121,6 +133,73 @@
                             min. purchase Rp. 350.000</h3>
                     </div>
                     <button class="btn bl_saleOff_BuyBtn">SHOP NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="div" style="height: 100px"></div>
+        <!-- section Sign up -->
+        <div class="container wide hp_bgcPrimary">
+            <div class="bl_signUp_wrapper">
+                <div class="bl_signUp_benefit">
+                    <h1 class="bl_signUp_benefit_ttl">Get more benefits
+                        by Sign Up & Join
+                        Mejiwoo Community!
+                    </h1>
+                    <ul class="bl_signUp_benefit_list">
+                        <li class="bl_signUp_benefit_listItem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <path
+                                    d="M14.074 2.4018L4.25 13.3998C4.10044 13.5651 4.0128 13.7771 4.002 13.9998C3.99 14.2198 4.058 14.4198 4.194 14.5998L14.014 27.5198C14.124 27.6678 14.274 27.7898 14.444 27.8738C14.6173 27.9579 14.8074 28.0015 15 28.0015C15.1926 28.0015 15.3827 27.9579 15.556 27.8738C15.726 27.7917 15.8741 27.6704 15.988 27.5198L25.808 14.5998C25.941 14.4289 26.0084 14.2161 25.998 13.9998C25.9872 13.7771 25.8995 13.5651 25.75 13.3998L15.926 2.4018C15.81 2.27462 15.6682 2.1737 15.51 2.1058C15.2691 2.0021 15.0022 1.97488 14.7454 2.02782C14.4886 2.08076 14.2542 2.21131 14.074 2.4018Z"
+                                    fill="black" />
+                            </svg>FREE Special Gift to a new member
+                        </li>
+                        <li class="bl_signUp_benefit_listItem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <path
+                                    d="M14.074 2.4018L4.25 13.3998C4.10044 13.5651 4.0128 13.7771 4.002 13.9998C3.99 14.2198 4.058 14.4198 4.194 14.5998L14.014 27.5198C14.124 27.6678 14.274 27.7898 14.444 27.8738C14.6173 27.9579 14.8074 28.0015 15 28.0015C15.1926 28.0015 15.3827 27.9579 15.556 27.8738C15.726 27.7917 15.8741 27.6704 15.988 27.5198L25.808 14.5998C25.941 14.4289 26.0084 14.2161 25.998 13.9998C25.9872 13.7771 25.8995 13.5651 25.75 13.3998L15.926 2.4018C15.81 2.27462 15.6682 2.1737 15.51 2.1058C15.2691 2.0021 15.0022 1.97488 14.7454 2.02782C14.4886 2.08076 14.2542 2.21131 14.074 2.4018Z"
+                                    fill="black" />
+                            </svg>Get 2x JIWOO Points to purchase items
+                        </li>
+                        <li class="bl_signUp_benefit_listItem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <path
+                                    d="M14.074 2.4018L4.25 13.3998C4.10044 13.5651 4.0128 13.7771 4.002 13.9998C3.99 14.2198 4.058 14.4198 4.194 14.5998L14.014 27.5198C14.124 27.6678 14.274 27.7898 14.444 27.8738C14.6173 27.9579 14.8074 28.0015 15 28.0015C15.1926 28.0015 15.3827 27.9579 15.556 27.8738C15.726 27.7917 15.8741 27.6704 15.988 27.5198L25.808 14.5998C25.941 14.4289 26.0084 14.2161 25.998 13.9998C25.9872 13.7771 25.8995 13.5651 25.75 13.3998L15.926 2.4018C15.81 2.27462 15.6682 2.1737 15.51 2.1058C15.2691 2.0021 15.0022 1.97488 14.7454 2.02782C14.4886 2.08076 14.2542 2.21131 14.074 2.4018Z"
+                                    fill="black" />
+                            </svg>Get special voucher code every month
+                        </li>
+                        <li class="bl_signUp_benefit_listItem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <path
+                                    d="M14.074 2.4018L4.25 13.3998C4.10044 13.5651 4.0128 13.7771 4.002 13.9998C3.99 14.2198 4.058 14.4198 4.194 14.5998L14.014 27.5198C14.124 27.6678 14.274 27.7898 14.444 27.8738C14.6173 27.9579 14.8074 28.0015 15 28.0015C15.1926 28.0015 15.3827 27.9579 15.556 27.8738C15.726 27.7917 15.8741 27.6704 15.988 27.5198L25.808 14.5998C25.941 14.4289 26.0084 14.2161 25.998 13.9998C25.9872 13.7771 25.8995 13.5651 25.75 13.3998L15.926 2.4018C15.81 2.27462 15.6682 2.1737 15.51 2.1058C15.2691 2.0021 15.0022 1.97488 14.7454 2.02782C14.4886 2.08076 14.2542 2.21131 14.074 2.4018Z"
+                                    fill="black" />
+                            </svg>Claim Voucher Disc. Up To 50%
+                        </li>
+                    </ul>
+                </div>
+                <div class="bl_signUp_cont">
+                    <form class="bl_signUp_form">
+                        <div class="bl_signUp_form_main">
+                            <input type="text" class="signUp_form_fullName" name="fullName" value="Full Name">
+                            <input type="text" class="signUp_form_email" name="email" value="Email Address">
+                            <input type="text" class="signUp_form_password" name="password" value="Password">
+                            <div class="bl_signUp_form_agreePolicy">
+                                <input type="checkbox" id="agreePolicy" class="signUp_form_agreePolicy"
+                                    name="agreePolicy">
+                                <label for="agreePolicy">I agree to all the <b>Terms</b> and <b>Privacy
+                                        Policy</b></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn bl_signUp_btn">Sign up</button>
+                    </form>
+                    <h3 class="bl_signUp_cont_seperate"><span>Or</span></h3>
+                    <div class="bl_signUp_withOther">
+                        <button class="bl_signUp_google"></button>
+                        <button class="bl_signUp_facebook"></button>
+                    </div>
                 </div>
             </div>
         </div>
