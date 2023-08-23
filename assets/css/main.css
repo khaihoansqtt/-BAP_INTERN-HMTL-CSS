@@ -398,7 +398,19 @@
 .bl_signUp_withOther {
 }
 
+.bl_signUp_withOther button {
+  margin: 23px auto 0;
+  display: flex;
+}
+
 .bl_signUp_google {
+  display: inline-flex;
+  padding: 12px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #fff;
 }
 
 .bl_signUp_facebook {
