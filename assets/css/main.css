@@ -487,8 +487,9 @@
 .bl_infor_other {
   margin-top: 230px;
   display: flex;
+  justify-content: flex-end;
   gap: 20px;
-  justify-self: flex-end;
+  flex: 1;
   margin-right: 16px;
 }
 
