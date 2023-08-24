@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAP_INTERN-HTML,CSS</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,30 +21,29 @@
 
     <header class="ly_header">
         <div class="container ly_header_container">
+            <!-- Header nav -->
             <nav>
                 <ul class="bl_header_menu">
                     <li class="bl_header_menu_item active">
-                        <!-- không có css có cần đặt class không?-->
-                        home
-                        <!-- đang dùng position absolute -->
-                        <div class="bl_header_menu_item_bot_border"></div>
-                        <!-- làm sao để border ở giữa theo chiều dọc, có phải là margin cho bl_header_menu -->
+                        Home
                     </li>
                     <li class="bl_header_menu_item">
-                        product
+                        Product
                     </li>
                     <li class="bl_header_menu_item">
-                        categories
+                        Categories
                     </li>
                     <li class="bl_header_menu_item">
-                        sale
+                        SALE
                     </li>
                 </ul>
             </nav>
+            <!-- Header brand -->
             <div class="bl_header_brand">
                 <div class="bl_header_brand_ttl">MEJIWOO</div>
                 <div class="bl_header_brand_txt">미지우</div>
             </div>
+            <!-- Header tool -->
             <div class="bl_header_tool">
                 <div class="bl_header_search">
                     <div class="bl_header_search_input">Search</div>
@@ -55,7 +56,6 @@
                     </div>
                 </div>
                 <div class="bl_header_bag">
-                    <!-- copy paste svg thì kích thước tự động sửa -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
                         <g clip-path="url(#clip0_1_41)">
                             <path
@@ -88,48 +88,105 @@
     </header>
     <main class="ly_cont">
 
-        <!-- section Brand background -->
+        <!-- sec Brand background -->
         <div class="container wide">
             <div class="bl_brand_img">
                 <div class="bl_brand_cont">
-
-                    <!-- chỗ này dùng flex box hệt vơi smẫu -->
                     <div class="bl_brand_ttl">
-                        <h1 class="bl_brand_main_tt">MEJIWOO</h1>
-                        <!-- tại sao bl_brand_sub_tt để auto lại không đúngkích thước với mẫu -->
+                        <h1 class="bl_sec_ttl">MEJIWOO</h1>
                         <h2 class="bl_brand_sub_tt">미지우</h2>
                     </div>
-                    <!-- ------------------------------------------------------------------------------------------------------------ -->
-                    <!-- có cần bọc thẻ svg trong 1 wrapper div không? -->
                     <div class="bl_brand_ttl_seperate">
                     </div>
-                    <h3 class="bl_brand_des">make your everyday look prettier
+                    <h3 class="bl_sec_des bl_brand_des">make your everyday look prettier
                         with MEJIWOO Korean Made</h3>
                 </div>
             </div>
         </div>
 
-        <!-- Section Season collections -->
+        <!-- sec Season collections -->
         <div class="container">
-            <div class="bl_section">
-                <h1 class="bl_section_header">
-                    season collections
+            <div class="bl_sec">
+                <h1 class="bl_sec_header">
+                    Season Collections
                 </h1>
-                <!-- Dùng theo kiểu col hay là như thiết kế là display flex -->
-                <div class="bl_section_cont"></div>
+                <div class="bl_sec_cont">
+                    <div class="row gap-24">
+                        <div class="col-4">
+                            <img class="bl_collection_img" src="./assets/img/collection-1.png" alt="collection-1" />
+                            <h2 class="bl_collection_ttl">SPRING</h2>
+                            <button class="btn bl_collection_moreBtn">MORE</button>
+                        </div>
+                        <div class="col-4">
+                            <img class="bl_collection_img" src="./assets/img/collection-2.png" alt="collection-2" />
+                            <h2 class="bl_collection_ttl">SUMMER</h2>
+                            <button class="btn bl_collection_moreBtn">MORE</button>
+                        </div>
+                        <div class="col-4">
+                            <img class="bl_collection_img" src="./assets/img/collection-3.png" alt="collection-3" />
+                            <h2 class="bl_collection_ttl">WINTER</h2>
+                            <button class="btn bl_collection_moreBtn">MORE</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Section Sale off -->
-        <!-- có cần dùng chung với brand background (bl_brand_img) không? -->
+        <!-- sec Best seller -->
+        <div class="container">
+            <h1 class="bl_sec_header">Our Best Seller</h1>
+            <div class="bl_bestSeller_slider">
+                <div>
+                    <div class="bl_bestSeller_item_wrapper">
+                        <img class="bl_bestSeller_item_img" src="./assets/img/best-seller-1.png" class="d-block w-100"
+                            alt="best-seller-1">
+                        <div class="bl_bestSeller_item_infor hp_tac">
+                            <div class="bl_bestSeller_item_name bl_product_name">Euphoria Crop Blouse</div>
+                            <div class="bl_bestSeller_item_price bl_product_price">Rp. 125.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bl_bestSeller_item_wrapper">
+                        <img class="bl_bestSeller_item_img" src="./assets/img/best-seller-2.png" class="d-block w-100"
+                            alt="best-seller-2">
+                        <div class="bl_bestSeller_item_infor hp_tac">
+                            <div class="bl_bestSeller_item_name bl_product_name">Venus Halter Dress</div>
+                            <div class="bl_bestSeller_item_price bl_product_price">Rp. 180.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bl_bestSeller_item_wrapper">
+                        <img class="bl_bestSeller_item_img" src="./assets/img/best-seller-3.png" class="d-block w-100"
+                            alt="best-seller-3">
+                        <div class="bl_bestSeller_item_infor hp_tac">
+                            <div class="bl_bestSeller_item_name bl_product_name">Snap Pure Blouse</div>
+                            <div class="bl_bestSeller_item_price bl_product_price">Rp. 129.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bl_bestSeller_item_wrapper">
+                        <img class="bl_bestSeller_item_img" src="./assets/img/best-seller-1.png" class="d-block w-100"
+                            alt="best-seller-1">
+                        <div class="bl_bestSeller_item_infor hp_tac">
+                            <div class="bl_bestSeller_item_name bl_product_name">Euphoria Crop Blouse</div>
+                            <div class="bl_bestSeller_item_price bl_product_price">Rp. 125.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sec Sale off -->
         <div class="container wide">
             <div class="bl_saleOff_img">
                 <div class="bl_saleOff_cont_wrapper">
                     <div class="bl_saleOff_cont">
-
-                        <h1 class="bl_saleOff_ttl">Get 50% Off</h1>
+                        <h1 class="bl_saleOff_ttl bl_sec_header">Get 50% Off</h1>
                         <!-- chữ này làm sao xuống dòng giống hệt thiết kế -->
-                        <h3 class="bl_saleOff_des">for all new product purchases
+                        <h3 class="bl_sec_des bl_saleOff_des">for all new product purchases
                             min. purchase Rp. 350.000</h3>
                     </div>
                     <button class="btn bl_saleOff_BuyBtn">SHOP NOW</button>
@@ -138,7 +195,84 @@
         </div>
         <div class="div" style="height: 100px"></div>
 
-        <!-- section Sign up -->
+        <!-- sec Our Products -->
+        <div class="container wide">
+            <div class="bl_sec_header">Our Products</div>
+            <ul class="bl_product_menu">
+                <h2 class="bl_product_menu_item active">Top</h2>
+                <h2 class="bl_product_menu_item">Bottom</h2>
+                <h2 class="bl_product_menu_item">Dress</h2>
+                <h2 class="bl_product_menu_item">Set</h2>
+                <h2 class="bl_product_menu_item">Knit</h2>
+                <h2 class="bl_product_menu_item">Outer</h2>
+            </ul>
+            <div class="bl_product_cont_wrapper">
+                <div class="bl_product_cont">
+                    <div class="row gap-24 row_product">
+                        <div class="col-4">
+                            <div class="bl_product_item">
+                                <img class="bl_product_img" src="./assets/img/product-1.png" alt="product-1" />
+                                <div class="bl_product_des">
+                                    <h3 class="bl_product_name">Eto V Neck Yellow</h3>
+                                    <h4 class="bl_product_price">Rp. 129.000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="bl_product_item">
+                                <img class="bl_product_img" src="./assets/img/product-2.png" alt="product-2" />
+                                <div class="bl_product_des">
+                                    <h3 class="bl_product_name">Macaroon Dry Half</h3>
+                                    <h4 class="bl_product_price">Rp. 139.000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="bl_product_item">
+                                <img class="bl_product_img" src="./assets/img/product-3.png" alt="product-3" />
+                                <div class="bl_product_des">
+                                    <h3 class="bl_product_name">Wave Stripe Hally</h3>
+                                    <h4 class="bl_product_price">Rp. 130.000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="bl_product_item">
+                                <img class="bl_product_img" src="./assets/img/product-1.png" alt="product-1" />
+                                <div class="bl_product_des">
+                                    <h3 class="bl_product_name">Eto V Neck Yellow</h3>
+                                    <h4 class="bl_product_price">Rp. 129.000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="bl_product_item">
+                                <img class="bl_product_img" src="./assets/img/product-2.png" alt="product-2" />
+                                <div class="bl_product_des">
+                                    <h3 class="bl_product_name">Macaroon Dry Half</h3>
+                                    <h4 class="bl_product_price">Rp. 139.000</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 ">
+                            <div class="bl_product_item">
+                                <img class="bl_product_img" src="./assets/img/product-3.png" alt="product-3" />
+                                <div class="bl_product_des">
+                                    <h3 class="bl_product_name">Wave Stripe Hally</h3>
+                                    <h4 class="bl_product_price">Rp. 130.000</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bl_product_moreBtn_wrapper">
+                    <button class="btn bl_product_moreBtn">SEE MORE</button>
+                </div>
+            </div>
+        </div>
+        <div style="height: 100px"></div>
+
+        <!-- sec Sign up -->
         <div class="container wide hp_bgcPrimary">
             <div class="bl_signUp_wrapper">
                 <div class="bl_signUp_benefit">
@@ -240,7 +374,7 @@
             </div>
         </div>
 
-        <!-- Section Infor -->
+        <!-- sec Infor -->
         <div class="container wide hp_bgcWhite">
             <div class="bl_infor_wrapper">
                 <div class="bl_infor_brand">
@@ -350,11 +484,11 @@
                     </ul>
                 </div>
                 <ul class="bl_infor_other">
-                    <li class="bl_infor_otherListItem bl_infor_ttl">Guide
+                    <li class="bl_infor_ttl">Guide
                     </li>
-                    <li class="bl_infor_otherListItem bl_infor_ttl">Terms & Conditions
+                    <li class="bl_infor_ttl">Terms & Conditions
                     </li>
-                    <li class="bl_infor_otherListItem bl_infor_ttl">Privacy Policy
+                    <li class="bl_infor_ttl">Privacy Policy
                     </li>
             </div>
         </div>
@@ -370,6 +504,39 @@
         </svg>
         <p class="footer_des">2023 MEJIWOO. All Rights Reserved</p>
     </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        // Use slick-slider
+        $(document).ready(function () {
+        });
+
+        // Listen event on nav to active a nav item
+        $(document).ready(function () {
+            $('.bl_bestSeller_slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: '',
+                nextArrow: '<button type="button" class="slick-next pull-right"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="45" viewBox="0 0 27 45" fill="none">\
+  <path d="M1 2L24.5611 20.9412C25.5569 21.7418 25.5569 23.2582 24.5611 24.0588L1 43" stroke="white" stroke-width="3"/>\
+</svg></button>'
+            });
+
+            $('.bl_header_menu_item').click(function () {
+                $('.bl_header_menu_item').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            $('.bl_product_menu_item').click(function () {
+                $('.bl_product_menu_item').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

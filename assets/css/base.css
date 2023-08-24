@@ -13,6 +13,9 @@ html {
   .container-lg {
     max-width: 1140px;
   }
+  .bl_product_cont_wrapper {
+    max-width: 1140px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -53,6 +56,7 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
 }
 /* Helper */
 .hp_db {
@@ -61,28 +65,17 @@ li {
 .hp_tac {
   text-align: center !important;
 }
-.hp_w400 {
-  width: 400px !important;
-}
 .hp_w50p {
   width: 50% !important;
 }
 .hp_lh1_5 {
   line-height: 1.5 !important;
 }
-.hp_MT1e {
-  margin-top: -1em !important;
-}
 .hp_bgcWhite {
   background-color: #fff !important;
 }
 .hp_bgcPrimary {
   background: var(--primary, #f7f6f0);
-}
-.hp_centering {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 .hp_pr-100 {
   padding-right: 100px;
@@ -112,4 +105,47 @@ li {
 }
 .ly_cont_side {
   flex: 0 0 260px;
+}
+
+/* Responsive in the future */
+.row.gap-24 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+.row.gap-24 .col-4 {
+  width: 33.3333%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Custom slick-slider */
+
+/* bỏ border wrapper mũi tên */
+.slick-arrow {
+  border: none;
+}
+
+.slick-next {
+  padding: 10px;
+  position: absolute;
+  top: 217px;
+  right: -2px;
+}
+
+/* sủa kích thước mũi tên cho đúng */
+.slick-next svg {
+  width: 25.5px;
+  height: 41px;
+  display: block;
+}
+
+/* Custom khoảng cách giữa các item */
+.slick-slide {
+  margin: 0 12px;
+}
+.slick-list {
+  margin: 0 -12px;
 }

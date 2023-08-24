@@ -23,6 +23,7 @@
   font-style: normal;
   font-weight: var(--font-weight-normal);
   line-height: normal;
+  cursor: pointer;
 }
 
 .bl_header_menu_item.active {
@@ -30,14 +31,21 @@
   position: relative;
 }
 
-.bl_header_menu_item.active .bl_header_menu_item_bot_border {
+.bl_header_menu_item::after {
+  display: block;
+  content: "";
+  width: 0;
   background-color: var(--black);
   border-radius: 5px;
-  width: 39px;
   height: 2px;
   position: absolute;
   left: 0;
   bottom: -2px;
+  transition: width 0.3s ease-in-out;
+}
+
+.bl_header_menu_item.active::after {
+  width: 100%;
 }
 
 .bl_header_brand {
@@ -110,6 +118,40 @@
   position: absolute;
   right: 98px;
   top: 6px;
+  cursor: pointer;
+}
+
+.bl_header_bag,
+.bl_header_profile {
+  cursor: pointer;
+}
+
+/* Begin Main */
+/* Common class */
+
+.bl_sec_header {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: var(--font-size-48);
+  font-style: normal;
+  font-weight: 600;
+  padding: 60px 0;
+}
+.bl_sec_ttl {
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  line-height: normal;
+}
+
+.bl_sec_des {
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Brand background */
@@ -143,14 +185,6 @@
   color: var(--black);
 }
 
-.bl_brand_main_tt {
-  font-family: Inter;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: var(--font-weight-bold);
-  line-height: normal;
-}
-
 .bl_brand_sub_tt {
   color: #000;
   font-family: Inter;
@@ -165,11 +199,6 @@
   height: 48px;
   color: #000;
   text-align: center;
-  font-family: Inter;
-  font-size: var(--font-size-16);
-  font-style: normal;
-  font-weight: var(--font-weight-normal);
-  line-height: normal;
 }
 
 .bl_brand_ttl_seperate {
@@ -177,16 +206,36 @@
   border: 1px solid #000;
 }
 
-/* Begin main */
 /* Season collection */
-.bl_section_header {
+.bl_collection_img {
+  width: 100%;
+}
+
+.bl_collection_ttl {
   color: #000;
   text-align: center;
   font-family: Inter;
-  font-size: var(--font-size-48);
+  font-size: 32px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 26px;
 }
+
+.bl_collection_moreBtn {
+  display: flex;
+  margin: 36px auto 0;
+  background: var(--primary, #f7f6f0);
+}
+
+/* Our best seller */
+.bl_bestSeller_item_img {
+  width: 100%;
+}
+.bl_bestSeller_item_infor {
+  margin-top: 14px;
+}
+
 /* Sale off */
 .bl_saleOff_img {
   background-image: url("../img/bg_saleOff.png");
@@ -194,6 +243,7 @@
   background-repeat: no-repeat;
   padding-bottom: 37.222222%;
   position: relative;
+  margin-top: 60px;
 }
 
 .bl_saleOff_cont_wrapper {
@@ -219,11 +269,7 @@
   flex-shrink: 0;
   color: #000;
   text-align: center;
-  font-family: Inter;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: var(--font-weight-bold);
-  line-height: normal;
+  padding: 0;
 }
 
 .bl_saleOff_des {
@@ -233,11 +279,6 @@
   flex-shrink: 0;
   color: #000;
   text-align: center;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .bl_saleOff_BuyBtn {
@@ -245,25 +286,86 @@
   display: flex;
 }
 
-/* Section Sign up */
+/* sec Our products */
+
+.bl_product_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bl_product_menu_item {
+  padding: 20px 40px;
+  color: #000;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.bl_product_menu_item.active {
+  border-radius: 10px 10px;
+  background: var(--primary, #f7f6f0);
+}
+
+.bl_product_cont_wrapper {
+  padding: 45px 37px 33px 38px;
+  border-radius: 10px;
+  background: var(--primary, #f7f6f0);
+  width: 1314px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bl_product_item {
+  margin-bottom: 81px;
+  text-align: center;
+}
+
+.bl_product_img {
+  width: 100%;
+}
+
+.bl_product_des {
+  margin-top: 19px;
+  display: inline-block;
+}
+
+.bl_product_name {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bl_product_price {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 4px;
+}
+
+.bl_product_moreBtn_wrapper {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* sec Sign up */
 .bl_signUp_wrapper {
   height: 797px;
   padding-left: 128px;
   padding-right: 128px;
   display: flex;
-  position: relative;
-}
-
-.bl_signUp_wrapper::before {
-  display: block;
-  content: "";
-  width: 1px;
-  height: 645.001px;
-  background: #000;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
 }
 
 .bl_signUp_benefit {
@@ -274,6 +376,19 @@
   color: var(--black);
   padding-top: 162px;
   padding-bottom: 162px;
+  position: relative;
+}
+
+.bl_signUp_benefit::before {
+  display: block;
+  content: "";
+  width: 1px;
+  height: 645.001px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  right: -45px;
+  transform: translateY(-50%);
 }
 
 .bl_signUp_benefit_ttl {
@@ -285,6 +400,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  padding: 0 26px;
 }
 
 .bl_signUp_benefit_list {
@@ -403,7 +519,7 @@
   display: flex;
 }
 
-/* Section Infor */
+/* sec Infor */
 
 .bl_infor_wrapper {
   display: flex;
@@ -445,6 +561,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  cursor: pointer;
 }
 
 .bl_infor_commonList {
@@ -462,6 +579,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
 }
 
 .bl_infor_getHelp {
@@ -482,6 +600,7 @@
 
 .bl_infor_followUs_listIcon {
   padding: 8px;
+  cursor: pointer;
 }
 
 .bl_infor_other {
