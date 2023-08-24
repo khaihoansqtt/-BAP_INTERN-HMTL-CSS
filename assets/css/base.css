@@ -58,18 +58,22 @@ li {
   line-height: normal;
   cursor: pointer;
 }
-/* Helper */
-.hp_db {
-  display: block !important;
+
+input {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
 }
+
+/* Helper */
 .hp_tac {
   text-align: center !important;
 }
-.hp_w50p {
-  width: 50% !important;
-}
-.hp_lh1_5 {
-  line-height: 1.5 !important;
+.hp_taj {
+  text-align: justify !important;
 }
 .hp_bgcWhite {
   background-color: #fff !important;
@@ -87,24 +91,27 @@ li {
   padding-left: 100px;
   padding-right: 100px;
 }
-
-/* Layout */
-
-/* .ly_cont {
-  max-width: 1230px;
-  padding: 60px 15px;
-  margin-right: auto;
-  margin-left: auto;
-} */
-.ly_cont.ly_cont__col {
-  display: flex;
+.hp_fz-14_fw-400 {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.ly_cont_main {
-  flex: 1;
-  margin-right: 3.25203%;
+.hp_fz-16_fw-400 {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-.ly_cont_side {
-  flex: 0 0 260px;
+.hp_mt-4 {
+  margin-top: 4px;
+}
+.hp_mt-6 {
+  margin-top: 6px;
 }
 
 /* Responsive in the future */
@@ -122,20 +129,20 @@ li {
 }
 
 /* Custom slick-slider */
-
-/* bỏ border wrapper mũi tên */
+/* Bỏ border wrapper của arrow */
 .slick-arrow {
   border: none;
 }
-
+/* Sửa lại vị trí arrow giống thiết kế */
 .slick-next {
   padding: 10px;
   position: absolute;
   top: 217px;
   right: -2px;
+  background-color: transparent;
 }
 
-/* sủa kích thước mũi tên cho đúng */
+/* Sủa kích thước mũi tên cho đúng thiết kế*/
 .slick-next svg {
   width: 25.5px;
   height: 41px;
@@ -148,4 +155,17 @@ li {
 }
 .slick-list {
   margin: 0 -12px;
+}
+
+/* Custom theySaid slider */
+.theySaid_slider .slick-slide {
+  margin: 0 11px;
+}
+.theySaid_slider .slick-list {
+  margin: 0 -11px;
+}
+.theySaid_slider .slick-next {
+  top: 295px;
+  padding: 0;
+  right: 0;
 }

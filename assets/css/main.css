@@ -110,6 +110,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  background-color: transparent;
 }
 
 .bl_header_search_icon {
@@ -229,8 +230,15 @@
 }
 
 /* Our best seller */
+.bl_slider_item_wrapper {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .bl_bestSeller_item_img {
   width: 100%;
+  height: 497px;
 }
 .bl_bestSeller_item_infor {
   margin-top: 14px;
@@ -306,7 +314,8 @@
 }
 
 .bl_product_menu_item.active {
-  border-radius: 10px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   background: var(--primary, #f7f6f0);
 }
 
@@ -360,12 +369,41 @@
   transform: translateX(-50%);
 }
 
+/* sec What they said */
+.bl_theySaid_item_wrapper {
+}
+.bl_theySaid_item_inner {
+  padding: 28px 35px 36px;
+}
+
+.bl_theySaid_item_img {
+  width: 100%;
+  height: 410px;
+}
+
+.bl_theySaid_item_infor {
+  margin-top: 24px;
+}
+
+.bl_theySaid_item_star {
+  margin-top: 6px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bl_theySaid_item_review {
+  height: 67px;
+}
+
 /* sec Sign up */
 .bl_signUp_wrapper {
   height: 797px;
   padding-left: 128px;
   padding-right: 128px;
   display: flex;
+  margin-top: 44px;
 }
 
 .bl_signUp_benefit {
@@ -449,15 +487,9 @@
   display: block;
   text-align: center;
   width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
   border-radius: 4px;
   background: var(--secondary, #fff);
-  outline: none;
-  border: none;
 }
 
 .bl_signUp_form_agreePolicy {
