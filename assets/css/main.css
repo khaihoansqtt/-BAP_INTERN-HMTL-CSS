@@ -4,7 +4,6 @@
 }
 
 .ly_header_container {
-  background-color: aliceblue;
   display: flex;
   position: relative;
   height: 100%;
@@ -232,8 +231,6 @@
 /* Our best seller */
 .bl_slider_item_wrapper {
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .bl_bestSeller_item_img {
@@ -371,6 +368,7 @@
 
 /* sec What they said */
 .bl_theySaid_item_wrapper {
+  border-radius: 10px;
 }
 .bl_theySaid_item_inner {
   padding: 28px 35px 36px;

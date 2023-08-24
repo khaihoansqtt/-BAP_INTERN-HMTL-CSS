@@ -23,6 +23,9 @@ html {
   .container-lg {
     max-width: 1440px;
   }
+  .bl_product_cont_wrapper {
+    max-width: 1314px;
+  }
 }
 
 .container {
@@ -140,6 +143,7 @@ input {
   top: 217px;
   right: -2px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* Sủa kích thước mũi tên cho đúng thiết kế*/
