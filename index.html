@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/_variables.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
@@ -23,7 +23,7 @@
         <div class="container ly_header_container">
             <!-- Header nav -->
             <nav>
-                <ul class="bl_header_menu">
+                <ul class="bl_header_menu hp_fz-14_fw-400">
                     <li class="bl_header_menu_item active">
                         Home
                     </li>
@@ -40,8 +40,8 @@
             </nav>
             <!-- Header brand -->
             <div class="bl_header_brand">
-                <div class="bl_header_brand_ttl">MEJIWOO</div>
-                <div class="bl_header_brand_txt">미지우</div>
+                <div class="hp_fz-20_fw-400">MEJIWOO</div>
+                <div class="bl_header_brand_txt hp_fz-14_fw-400">미지우</div>
             </div>
             <!-- Header tool -->
             <div class="bl_header_tool">
@@ -93,8 +93,8 @@
             <div class="bl_brand_img">
                 <div class="bl_brand_cont">
                     <div class="bl_brand_ttl">
-                        <h1 class="bl_sec_ttl">MEJIWOO</h1>
-                        <h2 class="bl_brand_sub_tt">미지우</h2>
+                        <h1 class="hp_fz-48_fw-600">MEJIWOO</h1>
+                        <h2 class="hp_fz-32_fw-500">미지우</h2>
                     </div>
                     <div class="bl_brand_ttl_seperate">
                     </div>
@@ -196,7 +196,7 @@
 
         <!-- sec Our Products -->
         <div class="container wide">
-            <div class="bl_sec_header">Our Products</div>
+            <div class="bl_sec_header bl_ourProduct_header">Our Products</div>
             <ul class="bl_product_menu">
                 <h2 class="bl_product_menu_item active">Top</h2>
                 <h2 class="bl_product_menu_item">Bottom</h2>
@@ -265,7 +265,12 @@
                     </div>
                 </div>
                 <div class="bl_product_moreBtn_wrapper">
-                    <button class="btn bl_product_moreBtn">SEE MORE</button>
+                    <button class="btn bl_product_moreBtn">
+                        SEE MORE
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2 12H22M22 12L13 3M22 12L13 21" stroke="black" stroke-width="2" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
@@ -280,8 +285,8 @@
                             <img class="bl_theySaid_item_img" src="./assets/img/they-said-1.png" class="d-block w-100"
                                 alt="they-said-1">
                             <div class="bl_theySaid_item_infor hp_tac">
-                                <div class="hp_fz-16_fw-400">Essence Long Denim</div>
-                                <div class="bl_theySaid_item_star hp_mt-6">
+                                <div class="bl_theySaid_item_productName">Essence Long Denim</div>
+                                <div class="bl_theySaid_item_star">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                                         fill="none">
                                         <path
@@ -339,8 +344,8 @@
                                             fill="#F4B400" />
                                     </svg>
                                 </div>
-                                <div class="hp_mt-4 hp_fz-14_fw-400">-Lisa-</div>
-                                <div class="hp_mt-6 hp_taj hp_fz-14_fw-400 bl_theySaid_item_review">“I like this pants.
+                                <div class="bl_theySaid_item_reviewerName">-Lisa-</div>
+                                <div class="bl_theySaid_item_review">“I like this pants.
                                     Its fit and
                                     perfect for me. The material is so comfortable that it can be used anywhere. It is
                                     also suitable to be combined with all types of my clothes.”</div>
@@ -354,7 +359,8 @@
                             <img class="bl_theySaid_item_img" src="./assets/img/they-said-2.png" class="d-block w-100"
                                 alt="they-said-2">
                             <div class="bl_theySaid_item_infor hp_tac">
-                                <div class="bl_theySaid_item_name hp_fz-16_fw-400">Andcable Knit Top</div>
+                                <div class="bl_theySaid_item_name bl_theySaid_item_productName">Andcable
+                                    Knit Top</div>
                                 <div class="bl_theySaid_item_star hp_mt-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                                         fill="none">
@@ -413,8 +419,8 @@
                                             fill="#F4B400" />
                                     </svg>
                                 </div>
-                                <div class="hp_mt-4 hp_fz-14_fw-400">-Celine-</div>
-                                <div class="hp_mt-6 hp_taj hp_fz-14_fw-400 bl_theySaid_item_review">“I like knitted
+                                <div class="bl_theySaid_item_reviewerName">-Celine-</div>
+                                <div class="bl_theySaid_item_review">“I like knitted
                                     materials. I bought this
                                     shirt because the design is very pretty and comfortable to wear casually. The
                                     material is also neat and good. I love shopping here and I’ll be a frequent customer
@@ -429,7 +435,8 @@
                             <img class="bl_theySaid_item_img" src="./assets/img/they-said-3.png" class="d-block w-100"
                                 alt="they-said-3">
                             <div class="bl_theySaid_item_infor hp_tac">
-                                <div class="bl_theySaid_item_name hp_fz-16_fw-400">Candy Stripe Boxy</div>
+                                <div class="bl_theySaid_item_name bl_theySaid_item_productName">Candy
+                                    Stripe Boxy</div>
                                 <div class="bl_theySaid_item_star hp_mt-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                                         fill="none">
@@ -488,8 +495,8 @@
                                             fill="#F4B400" />
                                     </svg>
                                 </div>
-                                <div class="hp_mt-4 hp_fz-14_fw-400">-Tiffany-</div>
-                                <div class="hp_mt-6 hp_taj hp_fz-14_fw-400 bl_theySaid_item_review">“This shirt is very
+                                <div class="bl_theySaid_item_reviewerName">-Tiffany-</div>
+                                <div class="bl_theySaid_item_review">“This shirt is very
                                     pretty and nice. The
                                     color is cute too. At first I bought it as a present for my friend but I also wanted
                                     it so we ended up going out wearing twin clothes haha.”</div>
@@ -503,7 +510,8 @@
                             <img class="bl_theySaid_item_img" src="./assets/img/they-said-1.png" class="d-block w-100"
                                 alt="they-said-1">
                             <div class="bl_theySaid_item_infor hp_tac">
-                                <div class="bl_theySaid_item_name hp_fz-16_fw-400">Essence Long Denim</div>
+                                <div class="bl_theySaid_item_name bl_theySaid_item_productName">Essence
+                                    Long Denim</div>
                                 <div class="bl_theySaid_item_star hp_mt-6">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                                         fill="none">
@@ -562,8 +570,8 @@
                                             fill="#F4B400" />
                                     </svg>
                                 </div>
-                                <div class="hp_mt-4 hp_fz-14_fw-400">-Lisa-</div>
-                                <div class="hp_mt-6 hp_taj hp_fz-14_fw-400 bl_theySaid_item_review">“I like this pants.
+                                <div class="bl_theySaid_item_reviewerName">-Lisa-</div>
+                                <div class="bl_theySaid_item_review">“I like this pants.
                                     Its fit and
                                     perfect for me. The material is so comfortable that it can be used anywhere. It is
                                     also suitable to be combined with all types of my clothes.”</div>
@@ -634,7 +642,7 @@
                     </form>
                     <h3 class="bl_signUp_cont_seperate"><span>Or</span></h3>
                     <div class="bl_signUp_withOther">
-                        <button class="btn bl_signUp_google_btn">
+                        <button class="btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
                                 fill="none">
                                 <path
@@ -652,7 +660,7 @@
                             </svg>
                             <span>SIGN UP WITH GOOGLE</span>
                         </button>
-                        <button class="btn bl_signUp_facebook_btn">
+                        <button class="btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
                                 fill="none">
                                 <g clip-path="url(#clip0_341_232)">
@@ -696,7 +704,7 @@
                     <div class="bl_infor_ttl">Get Help</div>
                     <ul class="bl_infor_commonList">
                         <li class="bl_infor_commonListItem">FAQ</li>
-                        <li class="bl_infor_commonListItem">Official Shipping</li>
+                        <li class="bl_infor_commonListItem">Shipping</li>
                         <li class="bl_infor_commonListItem">Payment </li>
                         <li class="bl_infor_commonListItem">Returns</li>
                         <li class="bl_infor_commonListItem">Contact Us</li>

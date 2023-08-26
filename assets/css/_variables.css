@@ -1,0 +1,10 @@
+:root {
+  --primary: #f7f6f0;
+  --secondary: #fff;
+  --white: #fff;
+  --black: #000;
+  --header-height: 106px;
+
+  --button-hover: #d9d9d959;
+}
+/* Sửa lại class background */
