@@ -290,7 +290,6 @@
 .bl_product_cont_wrapper {
   padding: 45px 37px 34px 38px;
   border-radius: 10px;
-  background: var(--primary, #f7f6f0);
   width: 1314px;
   flex-shrink: 0;
   margin: 0 auto;
